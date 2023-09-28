@@ -4,13 +4,46 @@
 
 <head>
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- jQuery 3.x -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+
+    <!-- jQuery UI Theme -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+
+    <!-- JavaScript -->
+    <script type="text/javascript" src="./script.js"></script>
+
+    <title>MIS 421 Search Engine</title>
 
 </head>
 
 <body>
+    <header>MIS 421 Assignment 2</header>
 
-  <script type="text/javascript" src="./script.js"></script>
+    <section>
+        <h2>Search Engine</h2>
+        <!-- Search Input Box -->
+        <input type="text" id="query" placeholder="Enter your search">
+        <!-- Search Button -->
+        <button id="searchButton">Search</button>
+        <!-- Time Button -->
+        <button id="timeButton">Display Current Time</button>
+        <!-- Search Results -->
+        <div id="searchResults">
+            <!-- Results will be displayed here -->
+        </div>
+        <!-- Time Display (jQuery UI Dialog) -->
+        <div id="time" style="display: none;">
+            <!-- Time will be displayed here as a jQuery UI dialog -->
+        </div>
+
+    </section>
+
+
+
+    
 
 </body>
 

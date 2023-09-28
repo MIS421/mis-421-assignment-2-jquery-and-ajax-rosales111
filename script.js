@@ -10,9 +10,9 @@ function apiSearch() {
   };
 
   $.ajax({
-      url: 'my-api-url' + $.param(params),
+      url: 'https://api.bing.microsoft.com/' + $.param(params),
       beforeSend: function (xhrObj) {
-        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "my-api-key");
+          xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "YOUR_API_KEY_HERE");
       },
       type: "GET",
     })
@@ -29,3 +29,19 @@ function apiSearch() {
       alert("error");
     });
 }
+
+//Click event handler to the search button
+$(document).ready(function () {
+    $("#searchButton").on("click", apiSearch);
+});
+
+// Change the background image
+function changeBackgroundImage() {
+    // Change the background image URL here
+    $('body').css('background-image', 'url("https://unsplash.com/photos/Iy59i0M7oP4")'); // Replace 'new-image-url.jpg' with the URL of your new image
+}
+
+// Attach a click event handler to the header (search engine name)
+$(document).ready(function () {
+    $("header").on("click", changeBackgroundImage);
+});

@@ -1,1 +1,63 @@
- 
+/* Set the background image for the page */
+body {
+    background-image: url('your-image-url.jpg'); /* Replace 'your-image-url.jpg' with the URL of your chosen background image */
+    background-size: cover; /* Ensure the background image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fix the background image while scrolling */
+}
+
+/* Hide the searchResults and time divs initially */
+#searchResults,
+#time {
+    display: none;
+}
+
+/* Style the header */
+header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px; /* Add some spacing around the header */
+}
+
+/* Style the section containing search elements */
+section {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    margin: 20px; /* Add spacing around the section */
+}
+
+/* Style the search input and buttons */
+input[type="text"],
+button {
+    padding: 10px; /* Add padding to input and buttons */
+    margin-right: 10px; /* Add spacing between input and buttons */
+    border: none; /* Remove borders */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#searchButton {
+    background-color: #007bff; /* Blue background color for search button */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+#timeButton {
+    background-color: #28a745; /* Green background color for time button */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+/* Style the search results div */
+#searchResults {
+    margin-top: 20px; /* Add spacing between search elements and results */
+    padding: 10px; /* Add padding to results */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for results */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the time display (jQuery UI Dialog) */
+#time {
+    text-align: center; /* Center-align the text */
+}
